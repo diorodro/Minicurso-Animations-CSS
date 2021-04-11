@@ -28,7 +28,7 @@
      width: 15rem;
      animation-name: fly;
      animation-duration: 2s;
-     animation-iteration-count: 10;
+     animation-iteration-count: 7;
  }
  
  @keyframes fly {
