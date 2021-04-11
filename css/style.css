@@ -22,13 +22,21 @@
      background: url(https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ip6PHbGkewUo/v1/1200x-1.jpg) no-repeat center;
      background-size: contain;
      height: 10rem;
-     margin-top: 100px;
+     margin-top: 500px;
      position: absolute;
      top: 40%;
      width: 15rem;
-     animation-name: fly;
+     /*animation-delay: 500ms;
      animation-duration: 2s;
-     animation-iteration-count: 7;
+     animation-direction: alternate-reverse;
+     animation-iteration-count: infinite;
+     animation-name: fly;
+     animation-timing-function:cubic-bezier(.02,1.85,1,-0.99); */
+     animation: fly 1.5s linear infinite alternate-reverse;
+ }
+ 
+ img:hover {
+     animation-play-state: paused;
  }
  
  @keyframes fly {
