@@ -1,13 +1,38 @@
  body {
-     display: grid;
-     place-items: center;
-     height: 100vh;
+     margin: 30px;
  }
  
  .box {
-     outline: 5px solid greenyellow;
+     background-color: #157bad;
+     height: 300px;
+     width: 300px;
+     transition-property: background-color, border-radius;
+     transition-duration: 1.5s, 2s;
+     /* transition-delay: .7s;*/
+     transition-timing-function: cubic-bezier( .134, .449, .240, .100);
+ }
+ 
+ .box:hover {
+     background-color: #ec5234;
+     border-radius: 50%;
+     /* transform: translateX(300px) scaleX(3) scaleY(1.5) rotate(35deg) skew(34deg);*/
  }
  
  img {
-     transform: translateX(300px) scaleX(3) scaleY(1.5) rotate(35deg) skew(34deg);
+     background: url(https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ip6PHbGkewUo/v1/1200x-1.jpg) no-repeat center;
+     background-size: contain;
+     height: 10rem;
+     margin-top: 100px;
+     position: absolute;
+     top: 40%;
+     width: 15rem;
+     animation-name: fly;
+     animation-duration: 2s;
+     animation-iteration-count: 10;
+ }
+ 
+ @keyframes fly {
+     100% {
+         transform: translateX(calc(100vw - 200px));
+     }
  }
