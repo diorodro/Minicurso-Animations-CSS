@@ -1,0 +1,16 @@
+body {
+    animation: is-bouncing 1s ease alternate-reverse infinite;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+svg {
+    width: 200px;
+}
+
+@keyframes is-bouncing {
+    to {
+        transform: translateX(30px);
+    }
+}
